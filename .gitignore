@@ -1,0 +1,6 @@
+# Development
+.phpunit.result.cache
+
+# Dependencies
+composer.lock
+vendor
