@@ -1,7 +1,8 @@
 # A Privacy Policy Package for Laravel Applications<!-- omit in toc -->
 
-[![Build Status](https://travis-ci.com/webflorist/privacy-policy-laravel.svg?branch=master)](https://travis-ci.com/webflorist/privacy-policy-laravel)
-[![Latest Stable Version](https://poser.pugx.org/webflorist/privacy-policy-laravel/v/stable)](https://packagist.org/packages/webflorist/privacy-policy-laravel)
+[![Build Status](https://app.travis-ci.com/webflorist/privacy-policy-laravel.svg?branch=main)](https://app.travis-ci.com/github/webflorist/privacy-policy-laravel)
+[![Latest Stable Version](https://poser.pugx.org/webflorist/privacy-policy-laravel/v)](https://packagist.org/packages/webflorist/privacy-policy-laravel)
+[![License](https://poser.pugx.org/webflorist/privacy-policy-laravel/license)](https://packagist.org/packages/webflorist/privacy-policy-laravel)
 
 This is a **Laravel** package providing an **open source** privacy policy available in **german** and **english**.
 
