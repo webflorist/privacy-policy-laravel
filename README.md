@@ -2,7 +2,7 @@
 
 [![Build Status](https://app.travis-ci.com/webflorist/privacy-policy-laravel.svg?branch=main)](https://app.travis-ci.com/github/webflorist/privacy-policy-laravel)
 [![Latest Stable Version](https://poser.pugx.org/webflorist/privacy-policy-laravel/v)](https://packagist.org/packages/webflorist/privacy-policy-laravel)
-[![License](https://poser.pugx.org/webflorist/privacy-policy-laravel/license)](https://packagist.org/packages/webflorist/privacy-policy-laravel)
+[![License](https://poser.pugx.org/webflorist/privacy-policy-laravel/license)](https://github.com/webflorist/privacy-policy-laravel/blob/main/LICENSE.md)
 
 This is a **Laravel** package providing an **open source** privacy policy available in **german** and **english**.
 
@@ -275,4 +275,4 @@ The included text _should_ be suitable for a GDPR-compliant website.
 
 ## License
 
-This package is open-sourced software licensed under the [MIT license](https://github.com/laravel/framework/blob/8.x/LICENSE.md).
+This package is open-sourced software licensed under the [MIT license](https://github.com/webflorist/privacy-policy-laravel/blob/main/LICENSE.md).
