@@ -77,11 +77,11 @@ Contact info for the data controller. The array can have the following elements:
 
 ```php
 [
- 'organisation' => 'Acme Corporation',
- 'name' => 'John Doe',
- 'address' => 'Acme Street 1, 123456 Acme City, USA',
- 'email' => 'privacy@example.com',
- 'phone' => '+1 555-0123',
+	'organisation' => 'Acme Corporation',
+	'name' => 'John Doe',
+	'address' => 'Acme Street 1, 123456 Acme City, USA',
+	'email' => 'privacy@example.com',
+	'phone' => '+1 555-0123',
 ];
 ```
 
@@ -121,25 +121,25 @@ Here is an example for a full `data_processing` config:
 
 ```php
 [
- 'webhosting' => [
-  'processor' => ['netlify', 'storyblok'],
-  'data_categories' => ['usage_data'],
- ],
- 'analytics' => [
-  'processor' => 'google_eu',
-  'service' => 'Google Analytics',
-  'data_categories' => ['usage_data', 'usage_statistics'],
- ],
- 'maps' => [
-  'processor' => 'google_usa',
-  'service' => 'Google Maps',
-  'data_categories' => ['usage_data', 'geo_data'],
- ],
- 'send_emails' => [
-  'processor' => 'twilio_eu',
-  'service' => 'Twilio Sendgrid',
-  'data_categories' => ['usage_data', 'inventory_data'],
- ],
+	'webhosting' => [
+		'processor' => ['netlify', 'storyblok'],
+		'data_categories' => ['usage_data'],
+	],
+	'analytics' => [
+		'processor' => 'google_eu',
+		'service' => 'Google Analytics',
+		'data_categories' => ['usage_data', 'usage_statistics'],
+	],
+	'maps' => [
+		'processor' => 'google_usa',
+		'service' => 'Google Maps',
+		'data_categories' => ['usage_data', 'geo_data'],
+	],
+	'send_emails' => [
+		'processor' => 'twilio_eu',
+		'service' => 'Twilio Sendgrid',
+		'data_categories' => ['usage_data', 'inventory_data'],
+	],
 ];
 ```
 
@@ -186,24 +186,24 @@ Here is an example of the cookie config:
 
 ```php
 [
- 'first_party' => [
-  [
-   'name' => 'session',
-   'purpose' => 'session',
-   'written_on' => 'every_visit',
-   'duration' => 'end_of_session',
-  ],
- ],
- 'third_party' => [
-  [
-   'name' => '_ga, _gat, _gid',
-   'purpose' => 'analytics_third_party',
-   'written_on' => 'accept_cookies',
-   'duration' => 'various',
-   'processor' => 'google_eu',
-   'service' => 'Google Analytics',
-  ],
- ],
+	'first_party' => [
+		[
+			'name' => 'session',
+			'purpose' => 'session',
+			'written_on' => 'every_visit',
+			'duration' => 'end_of_session',
+		],
+	],
+	'third_party' => [
+		[
+			'name' => '_ga, _gat, _gid',
+			'purpose' => 'analytics_third_party',
+			'written_on' => 'accept_cookies',
+			'duration' => 'various',
+			'processor' => 'google_eu',
+			'service' => 'Google Analytics',
+		],
+	],
 ];
 ```
 
@@ -228,13 +228,13 @@ Here is and example:
 
 ```php
 [
- 'acme_corp' => [
-  'name' => 'Acme Corporation',
-  'address' => 'Acme Street 1, 123456 Acme City, USA',
-  'privacy_policy' => 'https://www.example.com/privacy',
-  'privacy_shield' =>
-   'https://www.privacyshield.gov/participant?id=a2zt0000000TOWQAA4',
- ],
+	'acme_corp' => [
+		'name' => 'Acme Corporation',
+		'address' => 'Acme Street 1, 123456 Acme City, USA',
+		'privacy_policy' => 'https://www.example.com/privacy',
+		'privacy_shield' =>
+			'https://www.privacyshield.gov/participant?id=a2zt0000000TOWQAA4',
+	],
 ];
 ```
 
