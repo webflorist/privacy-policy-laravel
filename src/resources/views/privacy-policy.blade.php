@@ -152,7 +152,7 @@
 
             {!! $data_processing_start ?? '' !!}
 
-            @if(is_array(config('privacy-policy.data_processing.webhosting')))
+            @if (is_array(config('privacy-policy.data_processing.webhosting')))
                 <section id="process-webhosting">
                     <h3>
                         {!! \PrivacyPolicy::translate('data_processing.webhosting.title') !!}
@@ -185,7 +185,7 @@
                 </section>
             @endif
 
-            @if(is_array(config('privacy-policy.data_processing.analytics')))
+            @if (is_array(config('privacy-policy.data_processing.analytics')))
                 <section id="process-analytics">
                     <h3>
                         {!! \PrivacyPolicy::translate('data_processing.analytics.title') !!}
@@ -204,7 +204,7 @@
                 </section>
             @endif
 
-            @if(is_array(config('privacy-policy.data_processing.maps')))
+            @if (is_array(config('privacy-policy.data_processing.maps')))
                 <section id="process-maps">
                     <h3>
                         {!! \PrivacyPolicy::translate('data_processing.maps.title') !!}
@@ -225,7 +225,7 @@
                 </section>
             @endif
 
-            @if(is_array(config('privacy-policy.data_processing.send_emails')))
+            @if (is_array(config('privacy-policy.data_processing.send_emails')))
                 <section id="process-send_emails">
                     <h3>
                         {!! \PrivacyPolicy::translate('data_processing.send_emails.title') !!}

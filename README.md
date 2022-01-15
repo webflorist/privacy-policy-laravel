@@ -58,9 +58,9 @@ This package supports [`Laravel`](https://laravel.com/) from version 5.5 up unti
 ## Installation
 
 1. Require the package via composer:  
-`composer require webflorist/privacy-policy-laravel`
+   `composer require webflorist/privacy-policy-laravel`
 2. Publish config:  
-`php artisan vendor:publish --provider="Webflorist\PrivacyPolicy\PrivacyPolicyServiceProvider"`
+   `php artisan vendor:publish --provider="Webflorist\PrivacyPolicy\PrivacyPolicyServiceProvider"`
 3. Configure your privacy policy with the `privacy-policy.php` file in Laravel's `config` folder. (see below for details).
 4. Include the privacy policy component in your view:
 
@@ -77,12 +77,12 @@ Contact info for the data controller. The array can have the following elements:
 
 ```php
 [
-  'organisation' => 'Acme Corporation',
-  'name' => 'John Doe',
-  'address' => 'Acme Street 1, 123456 Acme City, USA',
-  'email' => 'privacy@example.com',
-  'phone' => '+1 555-0123'
-]
+	'organisation' => 'Acme Corporation',
+	'name' => 'John Doe',
+	'address' => 'Acme Street 1, 123456 Acme City, USA',
+	'email' => 'privacy@example.com',
+	'phone' => '+1 555-0123',
+];
 ```
 
 ### `singular`: boolean (mandatory)
@@ -121,26 +121,26 @@ Here is an example for a full `data_processing` config:
 
 ```php
 [
-    'webhosting' => [
-        'processor' => ['netlify', 'storyblok'],
-        'data_categories' => ['usage_data'],
-    ],
-    'analytics' => [
-        'processor' => 'google_eu',
-        'service' => 'Google Analytics',
-        'data_categories' => ['usage_data', 'usage_statistics'],
-    ],
-    'maps' => [
-        'processor' => 'google_usa',
-        'service' => 'Google Maps',
-        'data_categories' => ['usage_data', 'geo_data'],
-    ],
-    'send_emails' => [
-        'processor' => 'twilio_eu',
-        'service' => 'Twilio Sendgrid',
-        'data_categories' => ['usage_data', 'inventory_data'],
-    ],
-]
+	'webhosting' => [
+		'processor' => ['netlify', 'storyblok'],
+		'data_categories' => ['usage_data'],
+	],
+	'analytics' => [
+		'processor' => 'google_eu',
+		'service' => 'Google Analytics',
+		'data_categories' => ['usage_data', 'usage_statistics'],
+	],
+	'maps' => [
+		'processor' => 'google_usa',
+		'service' => 'Google Maps',
+		'data_categories' => ['usage_data', 'geo_data'],
+	],
+	'send_emails' => [
+		'processor' => 'twilio_eu',
+		'service' => 'Twilio Sendgrid',
+		'data_categories' => ['usage_data', 'inventory_data'],
+	],
+];
 ```
 
 ### `cookies`: array|false (mandatory)
@@ -186,25 +186,25 @@ Here is an example of the cookie config:
 
 ```php
 [
-    'first_party' => [
-        [
-            'name' => 'session',
-            'purpose' => 'session',
-            'written_on' => 'every_visit',
-            'duration' => 'end_of_session',
-        ],
-    ],
-    'third_party' => [
-        [
-            'name' => '_ga, _gat, _gid',
-            'purpose' => 'analytics_third_party',
-            'written_on' => 'accept_cookies',
-            'duration' => 'various',
-            'processor' => 'google_eu',
-            'service' => 'Google Analytics',
-        ],
-    ],
-]
+	'first_party' => [
+		[
+			'name' => 'session',
+			'purpose' => 'session',
+			'written_on' => 'every_visit',
+			'duration' => 'end_of_session',
+		],
+	],
+	'third_party' => [
+		[
+			'name' => '_ga, _gat, _gid',
+			'purpose' => 'analytics_third_party',
+			'written_on' => 'accept_cookies',
+			'duration' => 'various',
+			'processor' => 'google_eu',
+			'service' => 'Google Analytics',
+		],
+	],
+];
 ```
 
 ### `processors`: array (optional)
@@ -228,21 +228,22 @@ Here is and example:
 
 ```php
 [
-  'acme_corp' => [
-    'name' => 'Acme Corporation',
-    'address' => 'Acme Street 1, 123456 Acme City, USA',
-    'privacy_policy' => 'https://www.example.com/privacy',
-    'privacy_shield' => 'https://www.privacyshield.gov/participant?id=a2zt0000000TOWQAA4'
-  ]
-]
+	'acme_corp' => [
+		'name' => 'Acme Corporation',
+		'address' => 'Acme Street 1, 123456 Acme City, USA',
+		'privacy_policy' => 'https://www.example.com/privacy',
+		'privacy_shield' =>
+			'https://www.privacyshield.gov/participant?id=a2zt0000000TOWQAA4',
+	],
+];
 ```
 
 ## Component Slots
 
 The `webflorist-privacy-policy::privacy-policy` component provides the following named slots to insert custom text on various positions:
 
-| Slot Name                         | Usage                                                                   |
-| --------------------------------- | ----------------------------------------------------------------------- |
+| Slot Name                         | Usage                                                             |
+| --------------------------------- | ----------------------------------------------------------------- |
 | after_intro                       | `@slot('after_intro') Custom Text @endslot`                       |
 | gdpr_rights_start                 | `@slot('gdpr_rights_start') Custom Text @endslot`                 |
 | gdpr_rights_end                   | `@slot('gdpr_rights_end') Custom Text @endslot`                   |

@@ -26,30 +26,30 @@
 			"email": "gerald@code.florist"
 		}
 	],
-    "require": {
-        "laravel/framework": ">=5.5 <9.0.0",
+	"require": {
+		"laravel/framework": ">=5.5 <9.0.0",
 		"webflorist/privacy-policy-text": "^1.3"
-    },
+	},
 	"require-dev": {
 		"php": "^7.4|^8.0",
-        "orchestra/testbench": ">=3.5 <7.0.0"
+		"orchestra/testbench": ">=3.5 <7.0.0"
 	},
-    "autoload": {
-        "psr-4": {
-            "Webflorist\\PrivacyPolicy\\": "src/PrivacyPolicy/",
-            "PrivacyPolicyTests\\": "tests/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Webflorist\\PrivacyPolicy\\PrivacyPolicyServiceProvider"
-            ],
-            "aliases": {
-                "PrivacyPolicy": "Webflorist\\PrivacyPolicy\\Facades\\PrivacyPolicy"
-            }
-        }
-    },
+	"autoload": {
+		"psr-4": {
+			"Webflorist\\PrivacyPolicy\\": "src/PrivacyPolicy/",
+			"PrivacyPolicyTests\\": "tests/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Webflorist\\PrivacyPolicy\\PrivacyPolicyServiceProvider"
+			],
+			"aliases": {
+				"PrivacyPolicy": "Webflorist\\PrivacyPolicy\\Facades\\PrivacyPolicy"
+			}
+		}
+	},
 	"minimum-stability": "dev",
 	"prefer-stable": true
 }

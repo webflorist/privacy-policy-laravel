@@ -1,8 +1,7 @@
 <?php
 
 return [
-
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Singular or Plural Viewpoint
     |--------------------------------------------------------------------------
@@ -11,35 +10,35 @@ return [
     | Set to false for plural viewpoint (e.g. "Our website...").
     |
     */
-    'singular' => false,
+	'singular' => false,
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Data Controller
     |--------------------------------------------------------------------------
     |
     | Contact data of the data controller.
     |
-    */    
-    'data_controller' => [
-        'organisation' => 'Acme Corporation',
-        'name' => 'John Doe',
-        'address' => 'Acme Street 1, 123456 Acme City, USA',
-        'email' => 'privacy@example.com',
-        'phone' => '+1 555-0123'
-    ],
+    */
+	'data_controller' => [
+		'organisation' => 'Acme Corporation',
+		'name' => 'John Doe',
+		'address' => 'Acme Street 1, 123456 Acme City, USA',
+		'email' => 'privacy@example.com',
+		'phone' => '+1 555-0123',
+	],
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Data Processing
     |--------------------------------------------------------------------------
     |
     | For details see https://github.com/webflorist/privacy-policy-laravel#data-processing-array-optional
     |
-    */    
-    'data_processing' => [],
+    */
+	'data_processing' => [],
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Cookies
     |--------------------------------------------------------------------------
@@ -50,10 +49,10 @@ return [
     |
     | If not, see https://github.com/webflorist/privacy-policy-laravel#cookies-arrayfalse-mandatory
     |
-    */    
-    'cookies' => false,
+    */
+	'cookies' => false,
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Processors
     |--------------------------------------------------------------------------
@@ -67,5 +66,5 @@ return [
     | https://github.com/webflorist/privacy-policy-laravel#processors-array-optional
     |
     */
-    'processors' => [],
+	'processors' => [],
 ];

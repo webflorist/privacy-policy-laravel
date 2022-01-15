@@ -10,15 +10,13 @@ use Webflorist\PrivacyPolicy\PrivacyPolicy as PrivacyPolicyService;
  */
 class PrivacyPolicy extends Facade
 {
-
-    /**
-     * Static access-proxy for the PrivacyPolicy service.
-     *
-     * @return string
-     */
-    protected static function getFacadeAccessor()
-    {
-        return PrivacyPolicyService::class;
-    }
-
+	/**
+	 * Static access-proxy for the PrivacyPolicy service.
+	 *
+	 * @return string
+	 */
+	protected static function getFacadeAccessor()
+	{
+		return PrivacyPolicyService::class;
+	}
 }

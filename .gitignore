@@ -4,3 +4,6 @@
 # Dependencies
 composer.lock
 vendor
+/node_modules/
+yarn-error.log
+debug.log

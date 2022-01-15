@@ -1,0 +1,18 @@
+{
+	"author": "Gerald Buttinger <gerald@code.florist>",
+	"license": "MIT",
+	"scripts": {
+		"release": "semantic-release",
+		"lint:prettier": "prettier --ignore-path ./.gitignore --check .",
+		"lintfix:prettier": "prettier --ignore-path ./.gitignore --write --list-different .",
+		"lint": "yarn lint:prettier",
+		"lintfix": "yarn lintfix:prettier"
+	},
+	"devDependencies": {
+		"@prettier/plugin-php": "^0.17.6",
+		"@semantic-release/changelog": "^6.0.1",
+		"@semantic-release/git": "^10.0.1",
+		"prettier": "^2.5.1",
+		"semantic-release": "^18.0.1"
+	}
+}
